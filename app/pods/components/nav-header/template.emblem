@@ -1,0 +1,18 @@
+.nav-items
+  ul
+    li
+      = link-to "contact" tagName="a"
+        | Contact
+    li
+      = link-to "resume" tagName="a"
+        | Resume
+
+    li.nav-brand
+      img href="porfolio" src="/images/profile_photo_small.svg"
+
+    li
+      = link-to "blog" tagName="a"
+        | Blog
+    li
+      = link-to "porfolio" tagName="a"
+        | Porfolio

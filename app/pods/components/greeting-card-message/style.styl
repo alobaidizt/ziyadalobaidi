@@ -1,0 +1,48 @@
+.flex
+  display: flex
+
+p
+  font-family: "Courier"
+  border-right: 2px solid rgba(0,0,0,.0);
+  font-size: 20px
+  margin: 10px 0 0 10px
+  white-space: nowrap
+  overflow: hidden
+
+  &.hello
+    animation: hello-frame 1s steps(7) 1s both, blink 750ms steps(7) 1s 2 forwards
+
+  &.name
+    animation: name-frame 1.5s steps(16) 2.5s both, blink 750ms steps(20) 3s 3 forwards
+
+  &.welcome
+    animation: welcome-frame 1.5s steps(18) 4.5s both, blink 750ms steps(25) 6s infinite
+
+@keyframes hello-frame
+  from
+    width: 0
+  to
+    width: 5.5em
+    border-right-color: rgba(0,0,0,.75)
+
+@keyframes name-frame
+  from
+    width: 0
+  to
+    width: 10em
+    border-right-color: rgba(0,0,0,.75)
+
+@keyframes welcome-frame
+  from
+    width: 0
+  to
+    width: 14em
+
+@keyframes blink
+  from
+    border-right-color: rgba(0,0,0,.75)
+  to
+    border-right-color: transparent
+
+::selection
+  background: black

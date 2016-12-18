@@ -2,6 +2,13 @@
   "name": "ziyad-website",
   "dependencies": {
     "ember": "~2.8.0",
-    "ember-cli-shims": "0.1.1"
+    "ember-cli-shims": "0.1.1",
+    "remarkable": "^1.7.1",
+    "highlightjs": "^9.8.0",
+    "showdown": "^1.5.1",
+    "pdfobject": "pdfobject2#*",
+    "font-awesome": "~4.5.0",
+    "hammer.js": "^2.0.8",
+    "matchMedia": "0.2.0"
   }
 }

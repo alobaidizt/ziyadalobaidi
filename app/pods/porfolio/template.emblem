@@ -1,0 +1,12 @@
+h2.message
+  | Currently working on releasing few awesome projects, be sure to check my&nbsp;
+  a target="_blank" href="https://github.com/alobaidizt"
+    = fa-icon "github"
+  | &nbsp; and &nbsp;
+  a target="_blank" href="https://linkedin.com/in/alobaidizt"
+    = fa-icon "linkedin"
+  | &nbsp; to track my progress.
+h3.message
+  | Sincerely, Ziyad.
+
+  = liquid-outlet

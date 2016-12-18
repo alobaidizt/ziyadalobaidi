@@ -1,0 +1,48 @@
+.blogs-container
+  height:     100vh
+  list-style: none
+
+.parent
+  position:   relative
+  height:     200px
+  width:      300px
+  top:        50%
+  margin:     auto
+  margin-top: -100px
+
+  ::-webkit-scrollbar
+      display: none
+
+a
+  text-decoration: none
+.cell:hover
+  transform: scale(0.9)
+  cursor: pointer
+
+.cell
+  display: list-item
+  border-top: 2px solid rgba(19, 141, 253, 0.72)
+  font-family: "Lato"
+  line-height: 150%
+  color:      rgba(31, 36, 42, 0.47)
+  transition: all .4s ease-in-out
+
+
+  .title
+    max-width:  90%
+    white-space: nowrap
+    overflow: hidden
+    font-weight: 300
+    text-transform: uppercase
+    text-overflow: ellipsis
+
+  .date
+    padding-top: 5px
+    font-weight: 200
+    font-size: 8pt
+
+  .icon
+    color:      rgba(31, 36, 42, 0.47)
+    margin-top: -35px
+    margin-right: 10px
+    float: right

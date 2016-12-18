@@ -1,0 +1,7 @@
+span.flex
+  p.hello
+    | Hi There!
+  p.name
+    | My name is Ziyad.
+p.welcome
+  | Welcome to my Porfolio.

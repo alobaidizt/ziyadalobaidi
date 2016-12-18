@@ -1,0 +1,2 @@
+.post-container
+  = format-markdown model.post

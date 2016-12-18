@@ -1,0 +1,5 @@
+img.center src="images/profile_photo_with_signature.svg"
+
+= greeting-card-message
+
+= yield
