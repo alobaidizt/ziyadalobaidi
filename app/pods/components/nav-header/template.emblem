@@ -8,7 +8,8 @@
         | Resume
 
     li.nav-brand
-      img href="porfolio" src="/images/profile_photo_small.svg"
+      = link-to "porfolio"
+        img src="/images/profile_photo_small.svg"
 
     li
       = link-to "blog" tagName="a"

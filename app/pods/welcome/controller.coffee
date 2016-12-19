@@ -9,5 +9,4 @@ WelcomeController = Ember.Controller.extend
   _transition: ->
     @transitionToRoute('porfolio')
 
-
 `export default WelcomeController`

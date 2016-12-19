@@ -1,3 +1,4 @@
+= nav-header
 .left-side-container
   .download
     a download="resume.pdf" href="files/resume.pdf" Download

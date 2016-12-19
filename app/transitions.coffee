@@ -1,9 +1,27 @@
 Transitions =  ->
   @transition(
-    @fromRoute('welcome'),
     @toRoute('porfolio'),
     @use('fade'),
-    @reverse('fade')
+  )
+
+  @transition(
+    @toRoute('blog'),
+    @use('fade'),
+  )
+
+  @transition(
+    @toRoute((routeName) -> routeName.includes('blog')),
+    @use('fade')
+  )
+
+  @transition(
+    @toRoute('resume'),
+    @use('fade'),
+  )
+
+  @transition(
+    @toRoute('contact'),
+    @use('fade'),
   )
 
 `export default Transitions`
