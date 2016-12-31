@@ -1,5 +1,3 @@
-Promise = require('bluebird')
-
 postOrder = ->
   console.log('ai webhook request')
 

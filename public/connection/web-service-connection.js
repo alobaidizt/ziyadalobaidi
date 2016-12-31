@@ -1,3 +1,3 @@
 window.webService = {
-  backendService:  'http://localhost:3000/'
+  backendService:  'http://ziyadalobaidi.com:3000/'
 };
