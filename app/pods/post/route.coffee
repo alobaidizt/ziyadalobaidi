@@ -2,8 +2,9 @@
 
 PostRoute = Ember.Route.extend
   ajax: Ember.inject.service()
+  backendServiceString: window.webService.backendService
 
   model: (params) ->
-    @get('ajax').request(window.webService.backendService + "posts?title=#{params.title}")
+    @get('ajax').request("#{@get('backendServiceString')}posts?title=#{params.title}")
 
 `export default PostRoute`

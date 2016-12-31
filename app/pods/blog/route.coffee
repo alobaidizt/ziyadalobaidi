@@ -3,9 +3,10 @@
 
 BlogRoute = Ember.Route.extend
   ajax: Ember.inject.service()
+  backendServiceString: window.webService.backendService
 
   model: ->
-    @get('ajax').request(window.webService.backendService)
+    @get('ajax').request(@get('backendServiceString'))
 
   setupController: (controller, model) ->
     posts = model.map (post) ->
