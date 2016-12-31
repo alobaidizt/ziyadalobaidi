@@ -5,7 +5,7 @@ BlogRoute = Ember.Route.extend
   ajax: Ember.inject.service()
 
   model: ->
-    @get('ajax').request("http://localhost:3000/")
+    @get('ajax').request(window.webService.backendService)
 
   setupController: (controller, model) ->
     posts = model.map (post) ->
