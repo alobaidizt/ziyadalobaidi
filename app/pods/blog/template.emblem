@@ -1,7 +1,6 @@
 = nav-header
 .blogs-container
   .parent
-    log posts
     = ember-collection [
       items=posts
       cell-layout=(fixed-grid-layout 300 60)

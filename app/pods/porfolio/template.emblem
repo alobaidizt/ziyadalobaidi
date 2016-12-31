@@ -1,12 +1,15 @@
 = nav-header
 h2.message
-  | Currently working on releasing few awesome projects, be sure to check my&nbsp;
+  | Currently working on releasing few exciting projects, be sure to check my&nbsp;
+  = link-to 'blog' tagName="a"
+    | Blog
+  | &nbsp;, &nbsp;
   a target="_blank" href="https://github.com/alobaidizt"
     = fa-icon "github"
   | &nbsp; and &nbsp;
   a target="_blank" href="https://linkedin.com/in/alobaidizt"
     = fa-icon "linkedin"
-  | &nbsp; to track my progress.
+  | &nbsp; regularly to track my progress.
 h3.message
   | Sincerely, Ziyad.
 
