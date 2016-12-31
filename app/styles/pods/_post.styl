@@ -9,7 +9,7 @@
 
   p
     color: #788082
-    font-family: "Lato"
+    font-family: "Lato", "Helvetica"
     font-weight: 300
     line-height: 150%
     text-align: justify
@@ -19,7 +19,7 @@
       border-radius: 4px
       color: white
       background: rgba(19, 141, 253, 0.72)
-      font-family: "Lato"
+      font-family: "Lato", "Helvetica"
       font-weight: 200
 
   img, pre
@@ -39,23 +39,23 @@
     th
       text-align: center
       color: #788082
-      font-family: "Lato"
+      font-family: "Lato", "Helvetica"
       font-weight: 400
 
     td
       text-align: center
       color: #788082
-      font-family: "Lato"
+      font-family: "Lato", "Helvetica"
       font-weight: 300
 
   a
     color: #eaC371
-    font-family: "Lato"
+    font-family: "Lato", "Helvetica"
     text-decoration: blink dashed
 
   h1, h2, h3, h4, ul
     color: #788082
-    font-family: "Lato"
+    font-family: "Lato", "Helvetica"
 
   pre
     background: rgba(120, 128, 130, 0.05)
@@ -74,12 +74,14 @@
 
   mark
     background-color: deeppink
-    padding: 1px 2px
-    border-radius: 4px
-    color: white
-    font-family: "Lato"
-    font-weight: 200
+    padding:          1px 2px
+    border-radius:    4px
+    color:            white
+    font-family:      "Lato", "Helvetica"
+    font-weight:      200
 
-.liquid-outlet
-  height: 100%
-
+@media only screen and (max-width: 700px)
+  .post-container
+    p, p > code, table > th, table > td,
+    a, h1, h2, h3, h4, ul, mark
+      font-family: "Helvetica"

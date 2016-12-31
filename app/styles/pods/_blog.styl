@@ -22,11 +22,10 @@ a
 .cell
   display: list-item
   border-top: 2px solid rgba(19, 141, 253, 0.72)
-  font-family: "Lato"
+  font-family: "Lato", "Helvetica"
   line-height: 150%
   color:      rgba(31, 36, 42, 0.47)
   transition: all .4s ease-in-out
-
 
   .title
     max-width:  90%
@@ -46,3 +45,7 @@ a
     margin-top: -35px
     margin-right: 10px
     float: right
+
+@media only screen and (max-width: 500px)
+  .cell
+    font-family: "Helvetica"

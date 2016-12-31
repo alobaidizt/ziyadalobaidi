@@ -29,13 +29,19 @@
     vertical-align:  -webkit-baseline-middle
     padding:         4px
     text-decoration: none;
-    font-family:     "Lato"
-    color:           rgba(31, 36, 42, 0.22)
+    font-family:     "Lato", "Helvetica"
+    color:           rgba(31, 36, 42, 0.5)
     font-weight:     300
 
     &:hover
-      color: rgba(31, 36, 42, 0.62)
+      color: rgba(31, 36, 42, 0.72)
 
-  .active
-    color: rgba(31, 36, 42, 0.42)
+  a.active
+    color:       rgba(46, 48, 49, 0.89)
     font-weight: 400
+
+@media only screen and (max-width: 500px)
+  .nav-items
+    li a
+      font-family: "Helvetica"
+      color: rgba(31, 36, 42, 0.5)

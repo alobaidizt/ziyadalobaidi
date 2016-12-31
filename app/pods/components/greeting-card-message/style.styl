@@ -2,12 +2,21 @@
   display: flex
 
 p
-  font-family: "Courier"
+  font-family:  "Courier"
   border-right: 2px solid rgba(0,0,0,.0);
-  font-size: 20px
-  margin: 10px 0 0 10px
-  white-space: nowrap
-  overflow: hidden
+  font-size:    20px
+  margin:       10px 0 0 10px
+  white-space:  nowrap
+  overflow:     hidden
+  text-align:   center
+  margin:       auto
+
+  &.quote
+    animation: quote-frame 2.5s steps(26) 1s both, blink 750ms steps(10) 2.5s 3 forwards
+
+  &.author
+    animation: author-frame 1.5s steps(14) 5s both, blink 750ms steps(25) 6s infinite
+
 
   &.hello
     animation: hello-frame 1s steps(7) 1s both, blink 750ms steps(7) 1s 2 forwards
@@ -16,7 +25,24 @@ p
     animation: name-frame 1.5s steps(16) 2.5s both, blink 750ms steps(20) 3s 3 forwards
 
   &.welcome
+    text-align: center
+    margin:     auto
     animation: welcome-frame 1.5s steps(18) 4.5s both, blink 750ms steps(25) 6s infinite
+
+@keyframes quote-frame
+  from
+    width: 0
+  to
+    width: 25em
+    border-right-color: rgba(0,0,0,.75)
+
+@keyframes author-frame
+  from
+    width: 0
+  to
+    width: 12em
+    border-right-color: rgba(0,0,0,.75)
+
 
 @keyframes hello-frame
   from
