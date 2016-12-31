@@ -5,6 +5,7 @@ koa    = require('koa')
 cors = require('koa-cors')
 mongo  = require('koa-mongo')
 routes = require('./blog-routes')
+aiRoutes = require('./ai-routes')
 Grid = require("gridfs-stream")
 
 app = new koa()
@@ -22,6 +23,7 @@ app.use(mongo
 app.use(route.get('/', routes.list))
 app.use(route.get('/posts', routes.show))
 app.use(route.post('/posts', routes.create))
+app.use(route.post('/ishtar-webhook', aiRoutes.postOrder))
 
 if (!module.parent)
   console.log 'started listing'
