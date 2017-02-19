@@ -1,0 +1,15 @@
+log liveOrders
+each liveOrders as |order|
+  li
+    a
+      = order.quantity
+      | &nbsp;
+      = order.meat
+      | &nbsp;
+      = order.sandwichType
+      | &nbsp;
+      = order.dieteryPreferences
+      | &nbsp;
+    button click={action "updateStatus" order}
+      = order.status
+

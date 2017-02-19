@@ -9,6 +9,8 @@
     "pdfobject": "pdfobject2#*",
     "font-awesome": "~4.5.0",
     "hammer.js": "^2.0.8",
-    "matchMedia": "0.2.0"
+    "matchMedia": "0.2.0",
+    "socket.io-client": "^1.7.2",
+    "lodash": "^4.17.4"
   }
 }

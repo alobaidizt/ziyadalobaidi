@@ -12,5 +12,6 @@ Router.map ->
   @route 'post', { path: '/blog/:title'}
   @route 'resume'
   @route 'contact'
+  @route 'orders-dashboard'
 
 `export default Router`

@@ -20,5 +20,9 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+
+  app.import('bower_components/socket.io-client/dist/socket.io.js');
+  app.import('bower_components/lodash/dist/lodash.js');
+
   return app.toTree();
 };

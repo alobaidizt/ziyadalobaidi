@@ -13,7 +13,8 @@
 /connect.lock
 /coverage/*
 /libpeerconnection.log
+/forever-logs
 npm-debug.log
 testem.log
 
-/public/connection/web-service-connection.js
+public/connection/web-service-connection.js
