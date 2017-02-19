@@ -9,7 +9,7 @@
 
     li.nav-brand
       = link-to "porfolio"
-        img src="/images/profile_photo_small.svg"
+        img src="/images/profile-photo.jpg"
 
     li
       = link-to "blog" tagName="a"
