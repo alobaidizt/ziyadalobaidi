@@ -11,7 +11,7 @@ BlogRoute = Ember.Route.extend
   setupController: (controller, model) ->
     posts = model.map (post) ->
       title = post.filename.replace('.md', '')
-      name = title.replace('-', ' ')
+      name = title.replace(/-|_/ig, ' ')
 
       name: name
       path: "blog/#{title}"
