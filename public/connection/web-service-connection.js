@@ -1,4 +1,4 @@
 window.webService = {
-  backendService: 'http://localhost:3000/',
-  websocket:      'http://localhost:7000'
+  backendService: 'http://ziyadalobaidi.com:3000/',
+  websocket:      'http://ziyadalobaidi.com:7000'
 };
