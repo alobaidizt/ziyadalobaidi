@@ -14,7 +14,7 @@ BlogRoute = Ember.Route.extend
       name = title.replace(/-|_/ig, ' ')
 
       name: name
-      path: "blog/#{title}"
+      path: "#/blog/#{title}"
       uploaded: moment(post.uploadDate).format('YYYY MM DD')
 
     controller.set('posts', posts)
