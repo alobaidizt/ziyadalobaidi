@@ -6,7 +6,7 @@ module.exports = function(environment) {
     environment: environment,
     rootURL: '/',
     podModulePrefix: 'ziyad-website/pods',
-    locationType: 'auto',
+    locationType: 'history',
     emblemOptions: {
       blueprints: false
     },
